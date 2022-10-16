@@ -1,0 +1,5 @@
+package com.jeffs.omikuji.controllers;
+
+public class MainController {
+
+}

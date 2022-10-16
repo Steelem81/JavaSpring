@@ -1,0 +1,34 @@
+package com.jeffs.omikuji.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class MainController {
+
+	@GetMapping("/omikuji")
+	public String index() {
+		return "index.jsp";
+	}
+	
+	@PostMapping("/sendOmikuji")
+	public String sendOmikuji(
+		@RequestParam(value="luckyNumber") int luckNumber,
+		@RequestParam(value="city") String city,
+		@RequestParam(value="person") String person,
+		@RequestParam(value="hobby") String hobby,
+		@RequestParam(value="type") String type,
+		@RequestParam(value="soemthingNice") String somethingNice
+		) {
+	
+	return "redirect:/show";
+	}
+	
+	@GetMapping("/omikuji/show")
+	public String showOmikuji() {
+		return "omikuji.jsp"
+	}
+}
+

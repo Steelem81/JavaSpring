@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	align-items: center;
+	
+}
+
+.container{
+	width: 30vw;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+}
+.omikuji-container{
+	background-color: rgb(111,203,242);
+	font-size: 0.875em;
+}
+
+.form-container button{
+	padding: 5px;
+	margin_left: auto;
+	background-color: rgb(111,203,242);
+	width: 100px;
+	box-shadow: 5px 5px;
+}
