@@ -18,21 +18,26 @@
     <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-   <table>
+<div class="container">
+<h1>All Books</h1>
+   <table class="table table-striped">
    	<thead>
-   		<th>Title</th>
-   		<th>Description</th>
-   		<th>Language</th>
-   		<th>Num. Pages</th>
+   		<th scope="col">Title</th>
+   		<th scope="col">Description</th>
+   		<th scope="col">Language</th>
+   		<th scope="col">Num. Pages</th>
    	</thead>
+   	<tbody>
    	<c:forEach var="book" items="${allBooks}">
    		<tr>
-   			<td><c:out value="${book.title}"/></td>
+   			<td><a href="books/${book.id}"><c:out value="${book.title}"/></a></td>
    			<td><c:out value="${book.description}"/></td>
    			<td><c:out value="${book.language}"/></td>
    			<td><c:out value="${book.numberOfPages}"/></td>
    		</tr>
    	</c:forEach>
+   	</tbody>
    </table>
+</div>
 </body>
 </html>
