@@ -20,5 +20,7 @@ public interface BookRepository extends CrudRepository<Book, Long>{
     Long deleteByTitleStartingWith(String search);
     // this method finds an individual book by id
     Optional<Book> findById(Long search);
+    //this method saves a new book
+    
 	
 }

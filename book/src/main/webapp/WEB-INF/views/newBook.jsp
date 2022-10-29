@@ -22,22 +22,22 @@
    	<div>
    		<form:label path="title">Title</form:label>
    		<form:input path="title" />
-   		<form:errors path="title" />
+   		<form:errors path="title" class="text-danger" />
    	</div>
    	   	<div>
    		<form:label path="description">Description</form:label>
    		<form:input path="description"/>
-   		<form:errors path="description"/>
+   		<form:errors path="description" class="text-danger"/>
    	</div>
    	   	<div>
    		<form:label path="language">Language</form:label>
    		<form:input path="language"/>
-   		<form:errors path="language"/>
+   		<form:errors path="language" class="text-danger"/>
    	</div>
    	   	<div>
    		<form:label path="numberOfPages">Number of Pages</form:label>
    		<form:input path="numberOfPages"/>
-   		<form:errors path="numberOfPages"/>
+   		<form:errors path="numberOfPages" class="text-danger"/>
    	</div>
    	<button>Submit</button>
    </form:form>

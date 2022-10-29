@@ -33,7 +33,6 @@ INDEX VERSION 1.131+/Users/jeffreysteele/Documents/CodingDojo/JavaSpring/.metada
 2329936163.index
 2227511766.index
 1396219048.index
-1863463909.index
 2681102344.index
 1227316214.index
 2191606016.index
