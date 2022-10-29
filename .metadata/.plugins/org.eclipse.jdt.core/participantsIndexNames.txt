@@ -1,3 +1,7 @@
 INDEX VERSION 1.131
 /Users/jeffreysteele/Documents/CodingDojo/JavaSpring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/263579731.index
 /omikuji/src/main/java
+/Users/jeffreysteele/Documents/CodingDojo/JavaSpring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4268846222.index
+/book/src/main/java
+/Users/jeffreysteele/Documents/CodingDojo/JavaSpring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2219510557.index
+/book/src/main/java
