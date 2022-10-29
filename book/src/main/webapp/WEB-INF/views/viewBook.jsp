@@ -11,28 +11,20 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>All books</title>
+    <title>This Book</title>
     <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/main.css"> <!-- change to match your file/naming structure -->
     <script src="/webjars/jquery/jquery.min.js"></script>
     <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-   <table>
-   	<thead>
-   		<th>Title</th>
-   		<th>Description</th>
-   		<th>Language</th>
-   		<th>Num. Pages</th>
-   	</thead>
-   	<c:forEach var="book" items="${allBooks}">
-   		<tr>
-   			<td><c:out value="${book.title}"/></td>
-   			<td><c:out value="${book.description}"/></td>
-   			<td><c:out value="${book.language}"/></td>
-   			<td><c:out value="${book.numberOfPages}"/></td>
-   		</tr>
-   	</c:forEach>
-   </table>
+	<div class="container m-5">
+		<h1><c:out value="${book.title}"/></h1>
+		<div class="m-3">
+		<p>Description: <c:out value="${book.description}"/></p>
+		<p>Language: <c:out value="${book.language}"/></p>
+		<p>Number of Pages:<c:out value="${book.numberOfPages}"/></p>
+		</div>
+	</div>
 </body>
 </html>

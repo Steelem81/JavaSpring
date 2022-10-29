@@ -11,28 +11,35 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>All books</title>
+    <title>New Book</title>
     <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/main.css"> <!-- change to match your file/naming structure -->
     <script src="/webjars/jquery/jquery.min.js"></script>
     <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-   <table>
-   	<thead>
-   		<th>Title</th>
-   		<th>Description</th>
-   		<th>Language</th>
-   		<th>Num. Pages</th>
-   	</thead>
-   	<c:forEach var="book" items="${allBooks}">
-   		<tr>
-   			<td><c:out value="${book.title}"/></td>
-   			<td><c:out value="${book.description}"/></td>
-   			<td><c:out value="${book.language}"/></td>
-   			<td><c:out value="${book.numberOfPages}"/></td>
-   		</tr>
-   	</c:forEach>
-   </table>
+   <form:form action="/book/create" method="post" modelAttribute="book">
+   	<div>
+   		<form:label path="title">Title</form:label>
+   		<form:input path="title" />
+   		<form:errors path="title" />
+   	</div>
+   	   	<div>
+   		<form:label path="description">Description</form:label>
+   		<form:input path="description"/>
+   		<form:errors path="description"/>
+   	</div>
+   	   	<div>
+   		<form:label path="language">Language</form:label>
+   		<form:input path="language"/>
+   		<form:errors path="language"/>
+   	</div>
+   	   	<div>
+   		<form:label path="numberOfPages">Number of Pages</form:label>
+   		<form:input path="numberOfPages"/>
+   		<form:errors path="numberOfPages"/>
+   	</div>
+   	<button>Submit</button>
+   </form:form>
 </body>
 </html>
